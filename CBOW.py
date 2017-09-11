@@ -89,7 +89,7 @@ def main():
 
                 total_loss += loss.cpu().data[0]
                 count += 1
-        print("Iteration: ", it, "      Loss: ", total_loss/count)
+			print("Iteration: ", it, "      Loss: ", total_loss/count)
     except KeyboardInterrupt:
         pass
     model.saveEmbeddings()
