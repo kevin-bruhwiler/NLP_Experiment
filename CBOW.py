@@ -27,14 +27,14 @@ class CBOW(nn.Module):
 def toVariable(input):
     var = Variable(torch.LongTensor(input))
     if torch.cuda.is_available():
-        var.cuda()
+        var = var.cuda()
     return var
 
 def ixToVariable(input, word_to_ix):
     ixs = [[word_to_ix[word] for word in words] for words in input]
     var = Variable(torch.LongTensor(ixs))
     if torch.cuda.is_available():
-        var.cuda()
+        var = var.cuda()
     return var
 
 def ixToVector(ix, size):
