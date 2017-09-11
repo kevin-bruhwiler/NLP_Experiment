@@ -1,0 +1,1 @@
+Research project to create a text generator able to generate large and coherent blocks of text i.e. long conversations between a fixed number of individuals without nonsequitors.
